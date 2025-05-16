@@ -142,7 +142,7 @@ export default function Game() {
                         <button
                             className="rounded-full flex items-center justify-center border border-primary hover:bg-white hover:text-primary hover:cursor-pointer hover:scale-110 transition-all p-2 drop-shadow-md"
                             onClick={() => setMute(false)}>
-                            <VolumeX className="w-6 h-6" />
+                            <VolumeX strokeWidth={3} className="w-6 h-6" />
                         </button> : 
                         <button
                             className="rounded-full flex items-center justify-center border border-primary hover:bg-white hover:text-primary hover:cursor-pointer hover:scale-110 transition-all p-2 drop-shadow-md"
