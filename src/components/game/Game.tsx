@@ -66,14 +66,15 @@ export default function Game() {
             }
 
             if (tracker.current === sequence.current.length) {
+                setIsUserTurn(false)
                 setTimeout(() => {
                     generateRandomColor()
                     tracker.current = 0
-                    setIsUserTurn(false)
                 }, 1000)
             }
         } else {
             setGameOver(true)
+            setIsUserTurn(false)
             console.log('error')
         }
     }
@@ -85,7 +86,6 @@ export default function Game() {
             tracker.current = 0
             sequence.current = []
             setStateSequence([])
-            setIsUserTurn(false)
             generateRandomColor()
             setIsUserTurn(true)
         }, 1000)
